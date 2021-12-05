@@ -88,12 +88,13 @@ textarea {
    ========================================================================== */
 body{
   position: relative;
+  font-family: 'Roboto', sans-serif;
+  background-color: #1B3D2F;
 }
-.active{
-  text-decoration: underline !important;
-  font-weight: bolder;
-  color: red;
+a{
+  text-decoration: none;
 }
+
 /* SECURITY CARD */
 #layout{
   position: absolute;
@@ -102,25 +103,111 @@ body{
   z-index: 998;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.781);
+  background-color: #1b3d2fc0;
 }
 #securityCard{
   z-index: 999;
-  border: 2px solid grey;
+  border: 2px solid rgb(0, 0, 0);
   width: 50%;
   margin-left: 25%;
   margin-top: 15%;
-  background-color: rgb(223 230 255);
+  background-color: black;
+  color: gold;
   opacity: 1;
 }
-/* NAV */
-nav{
-  background-color: aquamarine;
+.closeBtn{
+  background-color: #1B3D2F;
 }
-#banner{
-  height: 27vh;
-  width: 100%;
-  border: 1px solid grey;
+/* NAV */
+.sectionMenu{
+  padding: 0;
+}
+nav{
+  background-color: rgba(0, 0, 0, 0.9);
+  border-bottom: 1px solid gold;
+  height: 10vh;
+}
+nav a{
+  color: gold !important;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+.containerImg{
+  height: 20vh;
+}
+.navImg{
+ background-color: #1B3D2F;
+}
+.logo{
+  height: 30%;
+}
+/* INDEX */
+.index{
+  background-color: #1B3D2F;
+  color: gold;
+  border-bottom: 1px solid gold;
+  height: 60vh;
+}
+#titleIndex{
+  text-decoration: underline;
+  font-weight: bold;
+}
+.card{
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid gold;
+}
+.list-group-item{
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid gold;
+  color: gold;
+}
+.btn{
+  background-color: #1B3D2F;
+  border: 1px solid gold;
+  color: gold;
+}
+.btn:hover{
+  background-color: black;
+  color: gold;
+  text-decoration: underline;
+}
+/* FORMULAIRE COMPTE */
+.formulaireCompte{
+  background-color: #1B3D2F;
+  color: gold;
+  height: 60vh;
+}
+.containerInput{
+  border-right: 1px solid gold;
+}
+#boutonForm{
+  background-color: #1B3D2F;
+  color: gold;
+  border: 1px solid gold;
+}
+#boutonForm:hover{
+  background-color: black;
+}
+#formTitle{
+  font-weight: bold;
+  text-decoration: underline;
+}
+.textDeco{
+  text-decoration: underline;
+}
+/* COMPTE */
+.containerCompte{
+  background-color: #1B3D2F;
+  color: gold;
+  height: 60vh;
+}
+.rowCompte{
+  border: 1px solid gold;
+}
+#compteTitle{
+  text-decoration: underline;
+  font-weight: bold;
 }
 /* BLOG */
 #blogContainer{
@@ -146,7 +233,7 @@ nav{
   margin: 2em 0;
 }
 #card{
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.9);
 }
 #delete{
   background-color: tomato !important;
@@ -154,7 +241,9 @@ nav{
 }
 /* FOOTER */
 footer{
-  background-color: aqua;
+  background-color: rgb(0, 0, 0);
+  color: gold;
+  height: 10vh;
 }
 
 /* ==========================================================================
