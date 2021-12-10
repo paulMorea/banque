@@ -1,10 +1,13 @@
 <!-- NAV -->
-<nav class="nav">
-    <a class="nav-link" aria-current="page" href="index.php">Accueil</a>
-    <a class="nav-link" href="formulaireCompte.php">Création compte</a>
-    <a class="nav-link" href="tauxDeChange.php">Taux de change</a>
-    <a class="nav-link" href="blog.php">Blog</a>
-    <a class="nav-link" href="formulaire.php">Formulaire</a>
+<nav class="nav container-fluid">
+    <a class="nav-link align-self-center" aria-current="page" href="index.php">Accueil</a>
+    <a class="nav-link align-self-center" href="formulaireCompte.php">Création compte</a>
+    <a class="nav-link align-self-center" href="tauxDeChange.php">Taux de change</a>
+    <a class="nav-link align-self-center" href="blog.php">Blog</a>
+    <a class="nav-link align-self-center" href="formulaire.php">Formulaire</a>
+    <form class="position-absolute  end-0 align-self-center mx-4">
+      <a href="logout.php">Déconnexion</a>
+    </form>
   </nav>
 
 <div class="container-fluid containerImg"> 

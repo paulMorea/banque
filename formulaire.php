@@ -3,12 +3,12 @@ include 'template/header.php';
 include 'template/navbar.php'
 ?>
 
-<header class="d-flex justify-content-center mt-5">
+<header class="d-flex justify-content-center mt-5 titleBanque">
   <h1>BANQUE</h1>
 </header>
 
 <main class="container-fluid">
-    <h3>FORMULAIRE :</h3>
+    <h3 class='titleh3'>FORMULAIRE :</h3>
 <!-- FORMULAIRE-->
 
   <form name="contactForm" class="container">

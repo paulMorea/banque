@@ -94,29 +94,12 @@ body{
 a{
   text-decoration: none;
 }
-
-/* SECURITY CARD */
-#layout{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 998;
-  width: 100%;
-  height: 100%;
-  background-color: #1b3d2fc0;
-}
-#securityCard{
-  z-index: 999;
-  border: 2px solid rgb(0, 0, 0);
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 15%;
-  background-color: black;
+.titleBanque{
   color: gold;
-  opacity: 1;
 }
-.closeBtn{
-  background-color: #1B3D2F;
+.titleh3{
+  color: gold;
+  text-decoration: underline;
 }
 /* NAV */
 .sectionMenu{
@@ -126,6 +109,7 @@ nav{
   background-color: rgba(0, 0, 0, 0.9);
   border-bottom: 1px solid gold;
   height: 10vh;
+  font-size: xx-small;
 }
 nav a{
   color: gold !important;
@@ -142,12 +126,22 @@ nav a:hover{
 .logo{
   height: 30%;
 }
+@media (min-width: 1250px) { 
+  nav{
+    font-size: medium;
+  }
+}
+/* LOGIN */
+.login{
+  color: gold;
+  margin-top: 30vh;
+}
 /* INDEX */
 .index{
+  position: relative;
   background-color: #1B3D2F;
   color: gold;
   border-bottom: 1px solid gold;
-  height: 60vh;
 }
 #titleIndex{
   text-decoration: underline;
@@ -172,11 +166,44 @@ nav a:hover{
   color: gold;
   text-decoration: underline;
 }
+@media (min-width: 1250px) { 
+    .index{
+      height: 60vh;
+    }
+ }
+/* CONNEXION */
+.welcome{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+/* LAYER */
+#layout{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  width: 100%;
+  height: 100%;
+  background-color: #1b3d2fc0;
+}
+#securityCard{
+  z-index: 999;
+  border: 2px solid rgb(0, 0, 0);
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 15%;
+  background-color: black;
+  color: gold;
+  opacity: 1;
+}
+.closeBtn{
+  background-color: #1B3D2F;
+}
 /* FORMULAIRE COMPTE */
 .formulaireCompte{
   background-color: #1B3D2F;
   color: gold;
-  height: 60vh;
 }
 .containerInput{
   border-right: 1px solid gold;
@@ -196,11 +223,15 @@ nav a:hover{
 .textDeco{
   text-decoration: underline;
 }
+@media (min-width: 1250px) { 
+  .formulaireCompte{
+    height: 60vh;
+  }
+}
 /* COMPTE */
 .containerCompte{
   background-color: #1B3D2F;
   color: gold;
-  height: 60vh;
 }
 .rowCompte{
   border: 1px solid gold;
@@ -209,24 +240,41 @@ nav a:hover{
   text-decoration: underline;
   font-weight: bold;
 }
+@media (min-width: 1250px) { 
+  .containerCompte{
+    height: 60vh;
+  }
+}
+/* TAUX DE CHANGE */
+.tauxTable{
+  border: 1px solid gold;
+  color: gold;
+}
+@media (min-width: 1250px) { 
+  .containerTaux{
+    height: 60vh;
+  }
+}
 /* BLOG */
 #blogContainer{
+  color: gold;
   margin-left: 25%;
   width: 50%;
   margin-bottom: 2em;
 }
 #id{
-  border: 1px solid black;
+  border: 1px solid gold;
   border-bottom: none;
 }
 #titre{
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 1px solid gold;
+  border-right: 1px solid gold;
 }
 #contenu{
-  border: 1px solid black;
+  color: gold;
+  border: 1px solid gold;
   margin-bottom: 2em ;
-  background-color: rgb(164, 255, 255);
+  background-color: rgb(0, 0, 0);
 } 
 /* FORMULAIRE */
 .form-select{
@@ -234,10 +282,6 @@ nav a:hover{
 }
 #card{
   border: 1px solid rgba(0, 0, 0, 0.9);
-}
-#delete{
-  background-color: tomato !important;
-  color: yellow;
 }
 /* FOOTER */
 footer{

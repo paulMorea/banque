@@ -1,16 +1,13 @@
 <?php
+session_start();
 require 'data/accounts.php';
 include 'template/header.php';
 include 'template/layout.php';
 include 'template/navbar.php';
 ?>
-
-<section >
-  
-</section>
-
+<?php if($_SESSION['user']): ?>
 <main class="container-fluid index">
-  
+
   <div class="row">
     <div class="col-12">
       <h3 id='titleIndex'>Vos comptes bancaires :</h3>
@@ -50,10 +47,16 @@ include 'template/navbar.php';
 
       </div> 
     <?php endforeach ?>
+    
 
   </div>
   
 </main>
-  
+<?php else: 
+  header('Location: login.php');
+  exit();
+?>
+
+<?php endif; ?>
 
 <?php include 'template/footer.php'?>
