@@ -4,7 +4,7 @@ include 'template/navbar.php';
 ?>
 <div class="container-fluid formulaireCompte">
     <div class="row">
-        <div class="col-6 d-flex justify-content-center containerInput">
+        <div class="col-12 col-md-6 d-flex justify-content-center containerInput">
             <form action="formulaireCompte.php" method="post"> 
                 <div class='col-12 my-2 textDeco'>Entrez votre prénom :</div>
                     <input type="text" name="firstName" size="20" required />
@@ -21,7 +21,7 @@ include 'template/navbar.php';
                 </div>
             </form>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6">
             <?php 
             if(!empty($_POST) && isset($_POST['firstName'])&& isset($_POST['lastName'])&& isset($_POST['compte'])){
                 $firstName = $_POST['firstName'];

@@ -1,0 +1,26 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>40</x><y>110</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;User&gt;&gt;
+
+--
+-id: SMALLINT
+--
+-- firstname
+-- lastname
+-- login_creation
+-- user_mail
+-- user_pwd
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>110</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Account&gt;&gt;
+
+--
+-id: SMALLINT
+--
+-- account_name
+-- account_number
+-- account_amount
+-- account_user_id</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>110</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Last_operation&gt;&gt;
+
+--
+-id: SMALLINT
+--
+-- last_operation_amount
+-- last_operation_description
+-- last_operation_account_id</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>190</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>190</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element></diagram>
